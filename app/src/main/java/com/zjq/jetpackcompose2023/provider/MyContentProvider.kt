@@ -7,7 +7,7 @@ import android.net.Uri
 
 class MyContentProvider: ContentProvider() {
     override fun onCreate(): Boolean {
-
+        return false
     }
 
     override fun query(
@@ -17,22 +17,22 @@ class MyContentProvider: ContentProvider() {
         p3: Array<out String>?,
         p4: String?
     ): Cursor? {
-
+        return null
     }
 
     override fun getType(p0: Uri): String? {
-
+        return ""
     }
 
     override fun insert(p0: Uri, p1: ContentValues?): Uri? {
-
+        return null
     }
 
     override fun delete(p0: Uri, p1: String?, p2: Array<out String>?): Int {
-
+        return 0
     }
 
     override fun update(p0: Uri, p1: ContentValues?, p2: String?, p3: Array<out String>?): Int {
-
+        return 0
     }
 }
